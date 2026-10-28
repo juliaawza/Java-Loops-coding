@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class PinCheck {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int pin;
+
+        do {
+            System.out.print("Enter your PIN: ");
+            pin = input.nextInt();
+        } while (pin != 2468);
+
+        System.out.println("Access granted");
+
+        input.close();
+    }
+}
