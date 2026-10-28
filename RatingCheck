@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class RatingCheck {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int rating;
+
+        do {
+            System.out.print("Enter a rating from 1 to 5: ");
+            rating = input.nextInt();
+        } while (rating < 1 || rating > 5);
+
+        System.out.println("Accepted: " + rating);
+
+        input.close();
+    }
+}
