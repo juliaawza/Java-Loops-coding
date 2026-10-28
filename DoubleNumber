@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class DoubleNumber {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int repeat;
+
+        do {
+            System.out.print("Enter a whole number: ");
+            int number = input.nextInt();
+
+            System.out.println("Double: " + (number * 2));
+
+            System.out.print("Enter 1 to repeat or 0 to stop: ");
+            repeat = input.nextInt();
+
+        } while (repeat == 1);
+
+        input.close();
+    }
+}
