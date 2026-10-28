@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class SavingsTracker {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter your savings target: ");
+        int target = input.nextInt();
+
+        int savings = 0;
+        int deposits = 0;
+
+        while (savings < target) {
+            System.out.print("Enter a positive deposit: ");
+            int deposit = input.nextInt();
+
+            savings += deposit;
+            deposits++;
+        }
+
+        System.out.println("Savings: " + savings);
+        System.out.println("Deposits: " + deposits);
+
+        input.close();
+    }
+}
