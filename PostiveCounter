@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class PositiveCounter {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int count = 0;
+
+        System.out.print("Enter a number (-1 to stop): ");
+        int number = input.nextInt();
+
+        while (number != -1) {
+            if (number > 0) {
+                count++;
+            }
+
+            System.out.print("Enter a number (-1 to stop): ");
+            number = input.nextInt();
+        }
+
+        System.out.println("Count: " + count);
+
+        input.close();
+    }
+}
